@@ -12,10 +12,10 @@ export class TaskController {
 
     constructor(private tasksService: TasksService) { }
 
-    @Get()
-    allTasks() {
-        return this.tasksService.getTasks()
-    }
+    // @Get()
+    // allTasks() {
+    //     return this.tasksService.getTasks()
+    // }
 
     @Get('/:id')
     oneTask(@Param('id', ParseIntPipe) id: number) {

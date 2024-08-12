@@ -10,9 +10,9 @@ export class TasksService {
     constructor(private prisma: PrismaService) { }
 
 
-    getTasks() {
-        return this.prisma.user.findMany()
-    }
+    // getTasks() {
+    //     return this.prisma.task.findMany()
+    // }
 
     getTask(id: number) {
         const taskFound = this.tasks.find(task => task.id === id)
